@@ -118,7 +118,7 @@ a {
 
 .land {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url(/ESSENTIALS/img/mainBG.jpg);
+    url("/ESSENTIALS/mainBG.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
