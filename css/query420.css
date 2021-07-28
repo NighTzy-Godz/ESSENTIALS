@@ -1,0 +1,58 @@
+@media only screen and (max-width: 420px) {
+  /* -----MAIN HEADER --------- */
+
+  /* #mainHead {
+    position: fixed;
+  } */
+
+  .headContainer {
+    flex-direction: column;
+  }
+
+  #mainHead .headLogo a {
+    font-size: 40px;
+  }
+
+  #mainHead ul {
+    display: none;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  #mainHead .search {
+    display: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #mainHead #openHead {
+    font-size: 25px;
+    top: 17px;
+    width: 40px;
+    display: block;
+  }
+
+  /*--------- LANDING PAGE ---------*/
+  .land {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(/ESSENTIALS/img/mainBG.jpg) no-repeat;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .say {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .say h1 {
+    font-size: 70px;
+    font-family: var(--bigFont);
+    color: var(--white);
+  }
+
+  .say span {
+    color: var(--red);
+  }
+}
