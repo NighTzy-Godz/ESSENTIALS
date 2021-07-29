@@ -135,4 +135,26 @@
     color: var(--white);
     font-size: 14px;
   }
+
+  /* ******************************************** */
+
+  /* ------------ MENU PAGE ------------- */
+
+  /* ******************************************** */
+
+  /* ------ SIDEBAR ---------- */
+  .sideBar {
+    transform: translateX(-100%);
+    width: 90%;
+    background-color: #0e0d0d;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    transition: transform 0.4s;
+  }
+  .sideTitle {
+    padding-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }

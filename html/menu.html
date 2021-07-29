@@ -41,8 +41,55 @@
       <title>Menu</title>
     </head>
   </head>
-  <body style="background-color: #121212">
-    <h1 style="color: white; font-size: 50px">I AM MENU</h1>
+  <body>
+    <!-- MAIN HEADER -->
+    <header id="mainHead">
+      <div class="headContainer">
+        <div class="headLogo">
+          <a href="#">ESSENTIALS</a>
+        </div>
+
+        <ul>
+          <li><a href="/ESSENTIALS/index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="/ESSENTIALS/html/menu.html">Menu</a></li>
+          <li><a href="#">Branches</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Membership</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search Here...." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <i class="fas fa-bars" id="openHead"></i>
+      </div>
+    </header>
+    <!-- SIDEBAR -->
+    <header class="sideBar">
+      <div class="sideContainer">
+        <div class="sideTitle">
+          <h1>MAIN MENU</h1>
+        </div>
+        <ul>
+          <li><a href="#">All</a></li>
+          <li><a href="#">Soups</a></li>
+          <li><a href="#">Vegetables</a></li>
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Pork</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Sizzling</a></li>
+          <li><a href="#">Seafood</a></li>
+          <li><a href="#">Merienda</a></li>
+          <li><a href="#"> Desserts</a></li>
+          <li><a href="#"> Drinks</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-angle-right" id="sideOpen"></i>
+      <i class="fas fa-angle-left" id="sideClose"></i>
+    </header>
+    <div style="height: 200vh; background-color: black"></div>
     <script src="/ESSENTIALS/index.js"></script>
   </body>
 </html>

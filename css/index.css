@@ -35,7 +35,7 @@ a {
 
 #mainHead {
   background-color: var(--dark);
-
+  position: fixed;
   width: 100%;
 }
 
@@ -172,4 +172,85 @@ span {
 .landBtn button a {
   color: var(--white);
   font-size: 20px;
+}
+
+/* ******************************************** */
+
+/* ------------ MENU PAGE ------------- */
+
+/* ******************************************** */
+
+/* ------ SIDEBAR ---------- */
+
+.sideBar {
+  transform: translateX(-100%);
+  width: 20%;
+  background-color: #0e0d0d;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+  transition: transform 0.4s;
+}
+
+.sideBar.sideShow {
+  transform: translateX(0);
+}
+
+.sideTitle {
+  padding-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sideTitle h1 {
+  color: var(--red);
+  font-family: var(--bigFont);
+  font-size: 40px;
+}
+
+.sideBar ul {
+  width: 100%;
+}
+
+.sideBar ul li {
+  padding: 15px;
+  margin-bottom: 5px;
+  padding-left: 40px;
+}
+
+.sideBar ul li:hover {
+  background-color: var(--red);
+  transition: 0.4s;
+}
+
+.sideBar ul li a {
+  color: var(--white);
+  font-size: 16px;
+}
+.sideBar i {
+  transform: translateX(100%);
+  border-radius: 0px 5px 5px 0px;
+  color: var(--red);
+  font-size: 40px;
+  padding: 10px;
+  background-color: #0e0d0d;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.sideBar #sideOpen {
+  color: rgb(18, 194, 18);
+}
+
+.sideBar #sideOpen.sideClose {
+  display: none;
+}
+
+.sideBar #sideClose {
+  display: none;
+}
+
+.sideBar #sideClose.sideOpen {
+  display: block;
 }
