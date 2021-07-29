@@ -129,4 +129,139 @@
     color: var(--white);
     font-size: 16px;
   }
+
+  /* ******************************************** */
+
+  /* ------------ MENU PAGE ------------- */
+
+  /* ******************************************** */
+
+  /* ------ SIDEBAR ---------- */
+  .sideBar {
+    transform: translateX(-100%);
+    width: 70%;
+    background-color: #0e0d0d;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    transition: transform 0.4s;
+  }
+  .sideTitle {
+    padding-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* --------- MAIN FOOD MENU ---------- */
+  .mainFoodMenu {
+    padding-top: 100px;
+  }
+
+  #menuCategory {
+    font-size: 40px;
+  }
+
+  .mainFoodMenu .row {
+    flex-direction: column;
+  }
+
+  .mainFoodMenu .box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .mainFoodMenu .menuImg {
+    width: 100%;
+  }
+
+  .mainFoodMenu .menuImg img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .mainFoodMenu .content {
+    padding: 10px;
+  }
+  .mainFoodMenu .menuName {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mainFoodMenu .menuName h1 {
+    font-weight: 300;
+    /* text-transform: uppercase; */
+    font-family: var(--roboto);
+    font-size: 24px;
+  }
+
+  .mainFoodMenu .menuName .name {
+    color: var(--red);
+    margin-bottom: 20px;
+  }
+
+  .mainFoodMenu .menuDesc {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .mainFoodMenu .menuDesc p {
+    font-size: 15.6px;
+    font-weight: 400;
+  }
+
+  .mainFoodMenu .menuQty {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .mainFoodMenu .menuQty h1 {
+    margin-right: 25px;
+    font-weight: 300;
+    font-size: 22px;
+    font-family: var(--roboto);
+  }
+
+  .mainFoodMenu .menuQty button {
+    width: 20px;
+    background-color: #e50914cc;
+    border: none;
+    height: 33px;
+  }
+
+  .mainFoodMenu .menuQty button:hover {
+    background-color: #e50914de;
+  }
+
+  .mainFoodMenu .menuQty input {
+    height: 33px;
+    width: 50%;
+  }
+
+  .mainFoodMenu .menuBuy {
+    width: 100%;
+  }
+
+  .mainFoodMenu .menuBuy button {
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(229, 9, 20, 0.7),
+      rgba(229, 9, 20, 0.8)
+    );
+    padding: 8px;
+    font-family: var(--roboto);
+    font-size: 16px;
+    border: none;
+    color: var(--white);
+  }
+
+  .mainFoodMenu .menuBuy button:hover {
+    background: linear-gradient(
+      to right,
+      rgba(229, 9, 20, 0.8),
+      rgba(229, 9, 20, 0.7)
+    );
+  }
 }
