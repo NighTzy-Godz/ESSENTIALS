@@ -1,0 +1,136 @@
+@media only screen and (min-width: 320px) and (max-width: 430px) {
+  /* -----MAIN HEADER --------- */
+
+  /* #mainHead {
+    position: fixed;
+  } */
+
+  .headContainer {
+    flex-direction: column;
+  }
+
+  #mainHead .headLogo {
+    padding: 0px 12px;
+  }
+  #mainHead .headLogo a {
+    font-size: 40px;
+  }
+
+  #mainHead ul {
+    display: none;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #mainHead ul li {
+    padding: 12px;
+    display: block;
+    margin-top: 0;
+  }
+
+  #mainHead ul li:hover {
+    background-color: var(--red);
+    transition: 0.3s;
+  }
+
+  #mainHead ul li a {
+    font-size: 16px;
+  }
+
+  #mainHead .search {
+    padding: 12px;
+    display: none;
+    width: 100%;
+  }
+
+  #mainHead #openHead {
+    font-size: 25px;
+    top: 17px;
+    width: 40px;
+    display: block;
+  }
+
+  /*--------- LANDING PAGE ---------*/
+  .land {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/ESSENTIALS/img/mainBG.jpg") no-repeat;
+    padding: 2rem 0px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .say {
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .say h1,
+  span {
+    font-size: 70px;
+    font-family: var(--bigFont);
+    color: var(--white);
+  }
+
+  .say span {
+    color: var(--red);
+  }
+
+  .landBtn {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .landBtn button {
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--red);
+  }
+  .landBtn button a {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .landBtn button:hover {
+    box-shadow: rgba(252, 2, 14, 0.7) 0px 24px 100px,
+      rgba(229, 9, 20, 0.7) 0px -12px 30px, rgba(229, 9, 20, 0.7) 0px 4px 6px,
+      rgba(229, 9, 20, 0.7) 0px 12px 13px, rgba(229, 9, 20, 0.7) 0px -3px 5px;
+  }
+
+  /*  ---------------- OUR STORY ---------------- */
+  .story {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/ESSENTIALS/img/story1.jpg");
+    padding: 2em 0px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .storyHead {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .storyHead h1 {
+    font-size: 60px;
+    font-family: var(--bigFont);
+    color: var(--red);
+  }
+
+  .mainStory {
+    text-align: justify;
+  }
+
+  .mainStory p {
+    color: var(--white);
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,175 @@
+/* --------- GLOBAL THINGS --------- */
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --dark: #0a0a0a;
+  --red: #e50914;
+  --white: rgba(255, 255, 255, 0.89);
+  --bigFont: "Big Shoulders Display", cursive;
+
+  /* font-family:  */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* --------- MAIN HEADER ------- */
+
+#mainHead {
+  background-color: var(--dark);
+
+  width: 100%;
+}
+
+.headContainer {
+  display: flex;
+  padding: 5px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hide {
+  display: flex;
+}
+
+#mainHead .headLogo {
+  margin-right: 50px;
+}
+
+#mainHead .headLogo a {
+  color: var(--red);
+  font-family: var(--bigFont);
+  font-size: 50px;
+}
+
+#mainHead ul {
+  display: flex;
+  margin-right: 20px;
+}
+
+#mainHead ul.show {
+  display: flex;
+}
+
+#mainHead ul li {
+  margin-top: 1rem;
+  margin-right: 20px;
+}
+
+#mainHead ul li a {
+  color: var(--white);
+  font-size: 18px;
+}
+
+#mainHead .search {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+#mainHead .search.show {
+  display: flex;
+}
+
+#mainHead .search input {
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  outline: none;
+}
+
+#mainHead .search button {
+  padding: 7px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--red);
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#mainHead #openHead {
+  color: var(--red);
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 30px;
+  width: 40px;
+  display: none;
+}
+
+/* ----------- LANDING PAGE ---------- */
+
+.land {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/ESSENTIALS/img/mainBG.jpg");
+  padding: 6rem;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.say {
+  text-align: center;
+  padding-top: 60px;
+  width: 60%;
+
+  margin: auto;
+}
+
+.say h1,
+span {
+  font-family: var(--bigFont);
+  font-size: 120px;
+}
+
+.say span {
+  color: var(--red);
+}
+
+.landBtn {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.landBtn button {
+  width: 30%;
+  padding: 10px;
+  background-color: var(--red);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landBtn button:hover {
+  box-shadow: rgba(252, 2, 14, 0.7) 0px 24px 100px,
+    rgba(229, 9, 20, 0.7) 0px -12px 30px, rgba(229, 9, 20, 0.7) 0px 4px 6px,
+    rgba(229, 9, 20, 0.7) 0px 12px 13px, rgba(229, 9, 20, 0.7) 0px -3px 5px;
+}
+
+.landBtn button a {
+  color: var(--white);
+  font-size: 20px;
+}
