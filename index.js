@@ -35,3 +35,7 @@ function sideToggle() {
   sideClose.classList.toggle("sideOpen");
   puller.classList.toggle("pullOpen");
 }
+
+// ------------ SIDE BAR HOVER ON LI -------------
+
+let sideLight = document.querySelectorAll(".sideLight");

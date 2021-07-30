@@ -79,6 +79,7 @@ a {
 #mainHead ul li a {
   color: var(--white);
   font-size: 18px;
+  display: inline-block;
 }
 
 #mainHead .search {
@@ -156,7 +157,7 @@ span {
 }
 
 .landBtn button {
-  width: 30%;
+  width: 35%;
   padding: 10px;
   background-color: var(--red);
   border: none;
@@ -173,6 +174,38 @@ span {
 .landBtn button a {
   color: var(--white);
   font-size: 20px;
+}
+
+/*  ---------------- OUR STORY ---------------- */
+.story {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/ESSENTIALS/img/story1.jpg");
+  padding: 5em 0px;
+  background-position: center;
+  background-size: cover;
+}
+
+.storyHead {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.storyHead h1 {
+  font-size: 80px;
+  font-family: var(--bigFont);
+  color: var(--red);
+}
+
+.mainStory {
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+}
+
+.mainStory p {
+  color: var(--white);
+  font-size: 17px;
 }
 
 /* ******************************************** */
@@ -219,17 +252,17 @@ span {
 .sideBar ul li {
   padding: 15px;
   margin-bottom: 5px;
-  padding-left: 40px;
-}
-
-.sideBar ul li:hover {
-  background-color: var(--red);
-  transition: 0.4s;
 }
 
 .sideBar ul li a {
   color: var(--white);
   font-size: 16px;
+  padding: 10px 100% 10px 10px;
+}
+
+.sideBar ul li a:hover {
+  transition: 0.4s;
+  background-color: var(--red);
 }
 
 /* PULLER */
@@ -292,7 +325,9 @@ span {
 }
 
 .mainFoodMenu .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .mainFoodMenu .box {
