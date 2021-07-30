@@ -158,6 +158,11 @@
     text-align: center;
   }
 
+  /* ------------ PULLER ---------------- */
+
+  .puller {
+    width: 80%;
+  }
   /* ----------- MAIN FOOD MENU ------------- */
 
   .mainFoodMenu {

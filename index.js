@@ -14,11 +14,12 @@ function mainToggle() {
   search.classList.toggle("show");
 }
 
-// ---------------- MENU PAGE -------------------
+// ---------------- MENU PAGE SIDE BAR-------------------
 
 let sideOpen = document.querySelector("#sideOpen");
 let sideClose = document.querySelector("#sideClose");
 let sideBar = document.querySelector(".sideBar");
+let puller = document.querySelector(".puller");
 
 sideOpen.addEventListener("click", () => {
   sideToggle();
@@ -32,4 +33,5 @@ function sideToggle() {
   sideBar.classList.toggle("sideShow");
   sideOpen.classList.toggle("sideClose");
   sideClose.classList.toggle("sideOpen");
+  puller.classList.toggle("pullOpen");
 }

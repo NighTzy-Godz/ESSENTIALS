@@ -186,12 +186,14 @@ span {
 .sideBar {
   width: 20%;
   background-color: #0e0d0d;
-  /* height: 100vh; */
+  overflow-y: scroll;
+  overflow-x: auto;
   position: fixed;
   top: 0;
+  bottom: 0;
+  z-index: 10000;
   transform: translateX(-100%);
-  transition: transform 0.4s;
-  /* overflow-y: scroll; */
+  transition: transform 0.4s ease;
 }
 
 .sideBar.sideShow {
@@ -229,7 +231,23 @@ span {
   color: var(--white);
   font-size: 16px;
 }
-.sideBar i {
+
+/* PULLER */
+
+.puller {
+  width: 20%;
+  transform: translateX(-100%);
+  position: fixed;
+  background-color: #121212;
+  height: 100vh;
+  transition: transform 0.4s ease;
+}
+
+.puller.pullOpen {
+  transform: translateX(0);
+}
+
+.puller i {
   transform: translateX(100%);
   border-radius: 0px 5px 5px 0px;
   color: var(--red);
@@ -241,24 +259,28 @@ span {
   top: 50%;
 }
 
-.sideBar #sideOpen {
+.puller #sideOpen {
   color: rgb(18, 194, 18);
   transform: translateX(100%);
 }
 
-.sideBar #sideOpen.sideClose {
+.puller #sideOpen.sideClose {
   display: none;
 }
 
-.sideBar #sideClose {
+.puller #sideClose {
   display: none;
 }
 
-.sideBar #sideClose.sideOpen {
+.puller #sideClose.sideOpen {
   display: block;
 }
 
 /* ----------------- MAIN MENU --------------- */
+
+.mainFoodMenu {
+  padding-top: 90px;
+}
 
 #menuCategory {
   text-align: center;

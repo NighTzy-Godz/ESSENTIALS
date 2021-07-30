@@ -152,6 +152,10 @@
     text-align: center;
   }
 
+  .puller {
+    width: 70%;
+  }
+
   /* --------- MAIN FOOD MENU ---------- */
   .mainFoodMenu {
     padding-top: 100px;
