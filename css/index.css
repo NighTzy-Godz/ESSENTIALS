@@ -140,12 +140,12 @@ a {
 }
 
 .say h1,
-span {
+.sayRed {
   font-family: var(--bigFont);
   font-size: 120px;
 }
 
-.say span {
+.say .sayRed {
   color: var(--red);
 }
 
@@ -432,4 +432,197 @@ span {
     rgba(229, 9, 20, 0.8),
     rgba(229, 9, 20, 0.7)
   );
+}
+
+/* ***************LOGIN PAGE********************** */
+.login {
+  padding: 180px 14px 150px 14px;
+  background-color: #121212;
+}
+
+.mainBox {
+  display: flex;
+  height: 500px;
+}
+
+/* LEFT BOX */
+.leftBox {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/ESSENTIALS/img/leftBoxImg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 15px;
+  width: 35%;
+}
+
+.leftLogo {
+  margin-bottom: 50px;
+}
+
+.leftLogo h3 {
+  color: var(--red);
+  font-size: 30px;
+  font-family: var(--bigFont);
+}
+
+.leftGreet {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.leftGreet h1 {
+  color: var(--white);
+  font-family: var(--roboto);
+  font-size: 45px;
+}
+
+.leftSay {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.leftSay p {
+  color: var(--white);
+  font-size: 14px;
+}
+
+/* RIGHT LOGIN BOX */
+.rightBox {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/ESSENTIALS/img/loginImg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 15px;
+  width: 100%;
+}
+
+.rightLogo {
+  margin-bottom: 50px;
+  display: none;
+}
+
+.rightLogo h3 {
+  color: var(--red);
+  font-size: 35px;
+  font-family: var(--bigFont);
+}
+
+.rightGreet {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rightGreet h1 {
+  color: var(--white);
+  font-family: var(--roboto);
+  font-size: 55px;
+  margin-top: 78px;
+}
+.loginBox {
+  padding: 10px;
+}
+
+.loginBox label {
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 25%;
+  color: var(--red);
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--roboto);
+}
+
+.loginBox input {
+  padding: 7px;
+  width: 70%;
+  border-radius: 3px;
+  border: none;
+}
+
+.loginBox .loginUsername {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.loginBox .loginPassword {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.rightBox .loginBox #forgot {
+  float: right;
+}
+
+.rightBox .loginBox #forgot a {
+  color: var(--white);
+}
+
+.loginBox .loginBtn {
+  margin: 40px auto auto 0px;
+  width: 100%;
+}
+
+.loginBox .loginBtn button {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--roboto);
+  color: var(--white);
+  background-color: var(--red);
+  border: none;
+  border-radius: 3px;
+}
+
+.loginBtn #signup {
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+}
+.loginBtn #signup a {
+  color: var(--white);
+}
+
+/* ----------FOOTER-------- */
+
+footer {
+  background-color: var(--dark);
+  padding: 8px;
+}
+
+.footContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftFoot a {
+  color: var(--red);
+  margin-right: 20px;
+  font-family: var(--roboto);
+}
+
+.leftFoot #leftDivide {
+  color: white;
+}
+
+.midFoot a {
+  color: var(--red);
+  font-family: var(--bigFont);
+  font-size: 30px;
+}
+
+.rightFoot p {
+  font-family: var(--roboto);
+  color: var(--red);
+}
+
+.rightFoot #rightFoot {
+  font-family: var(--roboto);
+  color: white;
 }
